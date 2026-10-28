@@ -292,7 +292,7 @@
                   procesandoCompra ||
                   carrito.items.length === 0
                 "
-                @click="compraRealizadaSinEliminar"
+                @click="compraRealizada"
               />
 
               <div class="text-caption text-grey-6 q-mt-sm">

@@ -489,7 +489,7 @@ const pantallasSeleccionadas = ref([])
 
 const precioMin = ref(null)
 const precioMax = ref(null)
-const ordenActual = ref('precio-asc')
+const ordenActual = ref('precio-desc') // 'precio-asc', 'precio-desc', 'fecha'
 
 // Paginación
 const paginaActual = ref(1)
