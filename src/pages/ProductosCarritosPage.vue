@@ -7,7 +7,7 @@
         <div>
           <div :class="$q.screen.xs ? 'text-h5 text-weight-bold text-grey-9 row items-center' : 'text-h4 text-weight-bold text-grey-9 row items-center'">
             <img
-              src="/src/assets/logo5.png"
+              src="../assets/logo5.png"
               class="q-mr-xs q-mr-sm-sm"
               :style="{ width: $q.screen.xs ? '36px' : '48px', height: $q.screen.xs ? '36px' : '48px' }"
             />

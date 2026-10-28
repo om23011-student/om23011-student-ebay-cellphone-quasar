@@ -427,15 +427,15 @@
     </div>
 
     <!-- PIE DE PÁGINA -->
-    <q-footer class="footer-tienda text-center q-pa-md">
-      <div class="text-caption footer-text">
-        &copy; {{ currentYear }} Adalid Orantes
-        <span class="footer-separador">·</span>
-        Carnet: OM23011
-        <span class="footer-separador">·</span>
-        Todos los derechos reservados.
-      </div>
-    </q-footer>
+    <footer class="footer-tienda q-pa-sm text-center">
+  <div class="text-caption text-grey-6 footer-text">
+    &copy; {{ currentYear }} Adalid Orantes
+    <span class="footer-separador q-mx-xs">•</span>
+    <span class="text-weight-medium">Carnet:</span> OM23011
+    <span class="footer-separador q-mx-xs">•</span>
+    Todos los derechos reservados.
+  </div>
+</footer>
   </q-page>
 </template>
 
@@ -1372,25 +1372,20 @@ function verAnuncio(producto) {
 }
 
 .footer-tienda {
-  min-height: 44px;
-  height: auto;
-  box-sizing: border-box;
-  padding: 12px 16px;
-  background: var(--dark, #2f3a44);
-  color: #f7f6f2;
-  text-align: center;
-  text-transform: uppercase;
+  /* Fondo transparente o muy suave para no cortar visualmente */
+  background: transparent;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  margin-top: auto; /* Ayuda a empujarlo al final si usas flexbox */
 }
 
 .footer-text {
-  margin-top: 0;
-  line-height: 1.7;
-  overflow-wrap: anywhere;
+  font-size: 0.75rem; /* Tamaño compacto para móvil */
+  line-height: 1.4;
+  opacity: 0.8;
 }
 
 .footer-separador {
-  color: #b9c1b4;
-  padding: 0 4px;
+  opacity: 0.4;
 }
 
 .loading-catalogo {
